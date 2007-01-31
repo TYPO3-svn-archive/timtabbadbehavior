@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'timtab_badbehavior'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_timtabbadbehavior_log">Bad Behavior Log Entry</label>
+			<label index="tx_timtabbadbehavior_log.ip">IP</label>
+			<label index="tx_timtabbadbehavior_log.date">Date</label>
+			<label index="tx_timtabbadbehavior_log.request_method">Request Method</label>
+			<label index="tx_timtabbadbehavior_log.request_uri">Request URI</label>
+			<label index="tx_timtabbadbehavior_log.server_protocol">Server Protocol</label>
+			<label index="tx_timtabbadbehavior_log.http_headers">HTTP Headers</label>
+			<label index="tx_timtabbadbehavior_log.user_agent">User Agent</label>
+			<label index="tx_timtabbadbehavior_log.request_entity">Request Entity</label>
+			<label index="tx_timtabbadbehavior_log.key">Key</label>
+			<label index="moduleFunction.tx_timtabbadbehavior_modfunc1">Bad Behavior</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_timtabbadbehavior_log">Bad Behavior Log Eintrag</label>
+			<label index="tx_timtabbadbehavior_log.ip">IP</label>
+			<label index="tx_timtabbadbehavior_log.date">Datum</label>
+			<label index="tx_timtabbadbehavior_log.request_method">Request Methode</label>
+			<label index="tx_timtabbadbehavior_log.request_uri">Request URI</label>
+			<label index="tx_timtabbadbehavior_log.server_protocol">Server Protokoll</label>
+			<label index="tx_timtabbadbehavior_log.http_headers">HTTP Header</label>
+			<label index="tx_timtabbadbehavior_log.user_agent">User Agent</label>
+			<label index="tx_timtabbadbehavior_log.request_entity">Request Instanz</label>
+			<label index="tx_timtabbadbehavior_log.key">Schlüssel</label>
+			<label index="moduleFunction.tx_timtabbadbehavior_modfunc1">Bad Behavior</label>
+		</languageKey>
+	</data>
+</T3locallang>

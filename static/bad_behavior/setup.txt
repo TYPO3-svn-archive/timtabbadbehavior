@@ -1,0 +1,10 @@
+
+
+plugin.tx_timtabbadbehavior {
+
+	pid = 0
+	strict = 0
+	verbose = 0
+	emergengyEmail = webmaster@yourdomain.com
+
+}
