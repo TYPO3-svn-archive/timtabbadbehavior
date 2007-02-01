@@ -2,6 +2,8 @@
 
 	* changed to a different hook
 	* changed settings from TS to EXT conf
+	* log table is read only
+	* some fields rendered by user function to show information in a better way
 
 2007-01-31 Ingo Renner  <typo3@ingo-renner.com>
 

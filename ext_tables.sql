@@ -18,5 +18,7 @@ CREATE TABLE tx_timtabbadbehavior_log (
 	bbkey tinytext NOT NULL,
 	
 	PRIMARY KEY (uid),
-	KEY parent (pid)
+	KEY parent (pid),
+	KEY ip (ip),
+	KEY user_agent (user_agent)
 );

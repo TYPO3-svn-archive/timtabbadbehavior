@@ -78,13 +78,13 @@ $TCA["tx_timtabbadbehavior_log"] = array (
 			"exclude" => 1,		
 			"label" => "LLL:EXT:timtab_badbehavior/locallang_db.xml:tx_timtabbadbehavior_log.key",		
 			"config" => array (
-				"type" => "input",	
-				"size" => "30",
+				"type" => "user",
+				'userFunc' => 'tx_timtabbadbehavior_bb->renderTceFormBbKey'
 			)
 		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "ip;;;;1-1-1, date, request_method, request_uri, server_protocol, http_headers, user_agent, request_entity, bbkey")
+		"0" => array("showitem" => "ip;;;;1-1-1, user_agent, date, request_method, request_uri, server_protocol, http_headers, request_entity, bbkey")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")

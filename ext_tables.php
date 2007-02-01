@@ -7,6 +7,7 @@ $TCA["tx_timtabbadbehavior_log"] = array (
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
 		'cruser_id' => 'cruser_id',
+		'readOnly'  => true,
 		'default_sortby' => "ORDER BY date DESC",	
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_timtabbadbehavior_log.gif',

@@ -52,6 +52,14 @@ class tx_timtabbadbehavior_bb {
 		return $PA['itemFormElValue'];
 	}
 	
+	function renderTceFormBbKey($PA, $fObj) {
+		
+		include_once(t3lib_extMgm::extPath('timtab_badbehavior').'bad-behavior/responses.inc.php');
+		$resp = bb2_get_response($PA['itemFormElValue']);
+		
+		return $PA['itemFormElValue'].': '.$resp['log'];
+	}
+	
 }
 
 

@@ -15,7 +15,7 @@
 			<label index="tx_timtabbadbehavior_log.http_headers">HTTP Headers</label>
 			<label index="tx_timtabbadbehavior_log.user_agent">User Agent</label>
 			<label index="tx_timtabbadbehavior_log.request_entity">Request Entity</label>
-			<label index="tx_timtabbadbehavior_log.key">Key</label>
+			<label index="tx_timtabbadbehavior_log.key">Key / Cause</label>
 			<label index="moduleFunction.tx_timtabbadbehavior_modfunc1">Bad Behavior</label>
 		</languageKey>
 		<languageKey index="de" type="array">
@@ -28,7 +28,7 @@
 			<label index="tx_timtabbadbehavior_log.http_headers">HTTP Header</label>
 			<label index="tx_timtabbadbehavior_log.user_agent">User Agent</label>
 			<label index="tx_timtabbadbehavior_log.request_entity">Request Instanz</label>
-			<label index="tx_timtabbadbehavior_log.key">Schlüssel</label>
+			<label index="tx_timtabbadbehavior_log.key">Schlüssel / Erklärung</label>
 			<label index="moduleFunction.tx_timtabbadbehavior_modfunc1">Bad Behavior</label>
 		</languageKey>
 	</data>
