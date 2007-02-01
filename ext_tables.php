@@ -26,5 +26,4 @@ if (TYPO3_MODE=="BE")	{
 	);
 }
 
-t3lib_extMgm::addStaticFile($_EXTKEY,'static/bad_behavior/', 'Bad Behavior');
 ?>

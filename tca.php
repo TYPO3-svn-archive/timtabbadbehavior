@@ -70,9 +70,8 @@ $TCA["tx_timtabbadbehavior_log"] = array (
 			"exclude" => 1,		
 			"label" => "LLL:EXT:timtab_badbehavior/locallang_db.xml:tx_timtabbadbehavior_log.request_entity",		
 			"config" => array (
-				"type" => "text",
-				"cols" => "30",	
-				"rows" => "5",
+				"type" => "user",
+				'userFunc' => 'tx_timtabbadbehavior_bb->renderTceFormRequestEntity'
 			)
 		),
 		"bbkey" => array (		

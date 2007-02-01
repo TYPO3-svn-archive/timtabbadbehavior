@@ -34,9 +34,9 @@ define('BB2_CWD', dirname(__FILE__));
 // Most of these are unused in non-database mode.
 $bb2_settings_defaults = array(
 	'log_table' => 'tx_timtabbadbehavior_log',
-	'display_stats' => false,
-	'strict' => false,
-	'verbose' => false
+	'display_stats' => 0,
+	'strict' => 0,
+	'verbose' => 0
 );
 
 // Bad Behavior callback functions.
@@ -112,9 +112,8 @@ function bb2_email() {
 function bb2_read_settings() {
 	global $bb2_settings_defaults;
 	
-	$settings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_timtabbadbehavior.'];
-	unset($settings['log_table']);  // just in case...
-	$settings = array_merge($bb2_settings_defaults, $settings);
+	$extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['timtab_badbehavior']);
+	$settings = array_merge($bb2_settings_defaults, $extConf);
 	
 	return $settings;
 }

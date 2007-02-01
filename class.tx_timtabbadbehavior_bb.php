@@ -47,6 +47,11 @@ class tx_timtabbadbehavior_bb {
 
 	}
 	
+	
+	function renderTceFormRequestEntity($PA, $fObj) {
+		return $PA['itemFormElValue'];
+	}
+	
 }
 
 

@@ -1,0 +1,6 @@
+
+  # cat=basic/enable/10; type=boolean; label= Verbose HTTP request logging
+verbose = 0
+
+  # cat=basic/enable/20; type=boolean; label= Strict checking (blocks more spam but may block some people)
+strict = 0
