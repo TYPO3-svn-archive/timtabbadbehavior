@@ -45,16 +45,10 @@ function bb2_insert($settings, $package, $key)
 	}
 	$request_entity = '';
 	if (!strcasecmp($request_method, "POST")) {
-		
 		$request_entity = t3lib_div::view_array($package['request_entity']);
-
-// old:
-//		foreach ($package['request_entity'] as $h => $v) {
-//			$request_entity .= bb2_db_escape("$h: $v\n");
-//		}
 	}
-	
-	$time = time();	
+
+	$time = time();
 	$field_values = array(
 		'pid'             => $settings['pid'],
 		'tstamp'          => $time,
@@ -74,7 +68,7 @@ function bb2_insert($settings, $package, $key)
 		$settings['log_table'],
 		$field_values
 	);
-	
+
 	return $query;
 }
 
@@ -90,7 +84,6 @@ function bb2_banned($settings, $package, $key, $previous_key=false)
 	if (is_callable('bb2_banned_callback')) {
 		bb2_banned_callback($settings, $package, $key);
 	}
-	
 	// Penalize the spammers some more
 	require_once(BB2_CORE . "/housekeeping.inc.php");
 	bb2_housekeeping($settings, $package);
@@ -204,7 +197,7 @@ function bb2_start($settings)
 		} elseif (stripos($ua, "Googlebot") !== FALSE || stripos($ua, "Mediapartners-Google") !== FALSE) {
 			require_once(BB2_CORE . "/google.inc.php");
 			bb2_test($settings, $package, bb2_google($package));
-		} elseif (stripos($ua, "Mozilla") !== FALSE && stripos($ua, "Mozilla" == 0)) {
+		} elseif (stripos($ua, "Mozilla") !== FALSE && stripos($ua, "Mozilla") == 0) {
 			$package['is_browser'] = true;
 			require_once(BB2_CORE . "/mozilla.inc.php");
 			bb2_test($settings, $package, bb2_mozilla($package));
@@ -220,8 +213,6 @@ function bb2_start($settings)
 	// Last chance screening.
 	require_once(BB2_CORE . "/screener.inc.php");
 	bb2_screener($settings, $package);
-
-#print_r($settings);
 
 	// And that's about it.
 	bb2_approved($settings, $package);
